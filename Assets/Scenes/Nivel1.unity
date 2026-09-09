@@ -131,6 +131,7 @@ GameObject:
   - component: {fileID: 1346418632}
   - component: {fileID: 1346418634}
   - component: {fileID: 1346418635}
+  - component: {fileID: 1346418636}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -285,6 +286,20 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1.7392712, y: 2.4217205}
   m_EdgeRadius: 0
+--- !u!114 &1346418636
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1346418631}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e359a1c401867044a8686e46c451306, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerController
+  moveSpeed: 5
+  jumpForce: 7
 --- !u!1 &2044783777
 GameObject:
   m_ObjectHideFlags: 0
@@ -435,7 +450,7 @@ GameObject:
   - component: {fileID: 2089048320}
   m_Layer: 0
   m_Name: Platform
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
